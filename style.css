@@ -43,15 +43,6 @@ a {
     padding-bottom: 0.5em;
 }
 
-h3 {
-    font-family: 'Oleo Script';
-    font-size: 2.5em;
-    color: #DFFFFC;
-    background-color: #507B78;
-    padding: 0.45em 1em;
-    border-radius: 0.7em;
-}
-
 .other-buttons {
     background: #507B78;
     border-bottom-left-radius: 1.2em;
@@ -73,57 +64,20 @@ h3 {
 }
 
 main {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50vh;
-}
-
-main section {
-    display: flex;
-    flex-direction: column;
-}
-
-main section i {
-    background-color: #385754;
-    color: #DFFFFC;
-    padding: 0.45em;
-    border-radius: 100%;
-    font-size: 3em;
-    align-self: center;
-    position: relative;
-    top: 0.35em;
-}
-
-#icons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    z-index: 5;
-}
-
-#icons i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 8em;
-    color: #DFFFFC;
-    background: #507B78;
-    border-radius: 100%;
-    width: 2em;
-    height: auto;
-    aspect-ratio: 1/1;
-}
-
-#hr {
-    margin: 0em;
-    padding: 0em;
-    background-color: #385754;
-    position: absolute;
     width: 100%;
-    height: 28vh;
-    bottom: 0;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#site-head {
+    color: #385754;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: 'Oleo Script';
+    text-align: center;
+    letter-spacing: 8px;
 }
 
 @media screen and (width < 650px) {
@@ -143,12 +97,18 @@ main section i {
         width: 100vw;
         justify-content: space-evenly;
     }
+    #site-head {
+        line-height: 2.5em;
+    }
 }
 
 @media screen and (width < 410px) {
     a {
         font-size: 0.95em;
         padding: 0.5em 1.15em;
+    }
+    #site-head {
+        font-size: 3.5em;
     }
 }
 
@@ -158,5 +118,8 @@ main section i {
     }
     li { 
         margin-top: 0;
+    }
+    #site-head {
+        font-size: 3em;
     }
 }
