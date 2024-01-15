@@ -44,7 +44,7 @@ a {
 }
 
 img {
-    width: 250px;
+    width: 15.6em;
     height: auto;
     aspect-ratio: 1/1;
     border-radius: 100%;
@@ -72,9 +72,10 @@ img {
 
 #name {
     position: relative;
-    top: -58px;
+    top: -2em;
     display: inline-block;
-    font-size: 28px;
+    font-size: 1.8em;
+    letter-spacing: -0.07em;
     color: #DFFFFC;
     text-transform: uppercase;
     font-family: 'Bebas Neue';
@@ -84,6 +85,10 @@ img {
     border-bottom-right-radius: 1.2em;
     border-top-right-radius: 0.5em;
     border-top-left-radius: 0.5em;
+}
+
+#empty {
+    padding-left: 0.15em;
 }
 
 h2#biography {
@@ -102,7 +107,7 @@ h2#biography {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 7em;
     color: #DFFFFC;
     font-family: 'Oleo Script';
@@ -124,6 +129,10 @@ h2#biography {
     margin-top: -0.9em;
 }
 
+#my-pic-responsive {
+    display: none;
+}
+
 .side-photo {
     margin-top: 2.3em;
 }
@@ -131,7 +140,7 @@ h2#biography {
 .text {
     display: flex;
     justify-content: center;
-    font-size: 40px;
+    font-size: 2.5em;
     font-family: 'Oleo Script';
     color: #E9F4F3;
     text-transform: uppercase;
@@ -209,6 +218,29 @@ h2#biography {
     transform: translate(18px, -53px) rotate(-53deg);
 }
 
+@media screen and (width < 900px) {
+    #name {
+        font-size: 1.3em;
+        padding: 0.6em 1em;
+        top: -1.9em;
+    }
+    a {
+        font-size: 1.5em;
+    }
+    img {
+        width: 12.5em;
+    }
+    .text {
+        font-size: 2em;
+    }
+    h2#biography {
+        font-size: 1.2em;
+    }
+    #about-me {
+        font-size: 1.8em;
+    }
+}
+
 @media screen and (width < 650px) {
     #display-none {
         display: none;
@@ -226,6 +258,92 @@ h2#biography {
         width: 100vw;
         justify-content: space-evenly;
     }
+    h2#biography {
+        display: none;
+    }
+    #name {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: normal;
+        top: 1em;
+        font-size: 2.2em;
+    }
+    #my-pic-responsive {
+        display: block;
+        position: relative;
+        top: 4.5em;
+    }
+    #my-pic {
+        display: none;
+    }
+    #name-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text {
+        font-size: 1.8em;
+    }
+    #about-me {
+        height: 8em;
+    }
+    #name-d {
+        transform: translate(-20px, 80px) rotate(-45deg);
+    }
+    #name-e {
+        transform: translate(-20px, 66px) rotate(-39deg);
+    }
+    #name-a {
+        transform: translate(-17px, 54px) rotate(-33deg);
+    }
+    #name-n {
+        transform: translate(-11px, 45px) rotate(-28deg);
+    }
+    #name-y {
+        transform: translate(0, 38px) rotate(-5deg);
+    }
+    #name-u-1 {
+        transform: translate(5px, 37px) rotate(2deg);
+    }
+    #name-r {
+        transform: translate(13px, 40px) rotate(11deg);
+    }
+    #name-u-2 {
+        transform: translate(17px, 48px) rotate(18deg);
+    }
+    #name-k {
+        transform: translate(21px, 58px) rotate(25deg);
+    }
+    #name-o {
+        transform: translate(26px, 72px) rotate(33deg);
+    }
+    #name-v {
+        transform: translate(28px, 88px) rotate(42deg);
+    }
+    #hobby-m {
+        transform: translate(-30px, -40px) rotate(40deg);
+    }
+    #hobby-y-2 {
+        transform: translate(14px, -32px) rotate(-40deg);
+    }
+    #passion-m {
+        transform: translate(-27px, -44px) rotate(40deg);
+    }
+    #passion-y {
+        transform: translate(-25px, -25px) rotate(37deg);
+    }
+    #passion-i {
+        transform: translate(18px, -17px) rotate(-29deg);
+    }
+    #passion-o {
+        transform: translate(20px, -27px) rotate(-35deg);
+    }
+    #passion-n {
+        transform: translate(19px, -40px) rotate(-47deg);
+    }
 }
 
 @media screen and (width < 410px) {
@@ -233,6 +351,10 @@ h2#biography {
         font-size: 0.95em;
         padding: 0.5em 1.15em;
     }
+    #gallery {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (width < 345px) {
