@@ -9,7 +9,7 @@
 
 body {
     background: #A9DBD7;
-    margin: 2px;
+    margin: 0.125em;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
 
 ul {
     display: flex;
-    padding: 4px;
+    padding: 0.25em;
     padding-top: 0;
     padding-right: 0;
     justify-content: center;
@@ -93,14 +93,14 @@ img {
 
 h2#biography {
     display: inline-flex;
-    margin-left: 20px;
+    margin-left: 1.25em;
     color: #DFFFFC;
     text-transform: uppercase;
     font-family: 'Bebas Neue';
-    font-size: 26px;
-    padding: 10px 25px;
+    font-size: 1.6em;
+    padding: 0.6em 1.6em;
     background: #507B78;
-    border-radius: 50px;
+    border-radius: 3.12em;
 }
 
 #about-me {
@@ -112,10 +112,10 @@ h2#biography {
     color: #DFFFFC;
     font-family: 'Oleo Script';
     font-size: 2rem;
-    padding: 10px 25px;
+    padding: 0.6em 1.6em;
     margin-top: 0.1em;
     background: #507B78;
-    border-radius: 34px;
+    border-radius: 2.12em;
 }
 
 #gallery {
@@ -220,12 +220,7 @@ h2#biography {
 
 @media screen and (width < 900px) {
     #name {
-        font-size: 1.3em;
-        padding: 0.6em 1em;
-        top: -1.9em;
-    }
-    a {
-        font-size: 1.5em;
+        display: none;
     }
     img {
         width: 12.5em;
@@ -234,7 +229,7 @@ h2#biography {
         font-size: 2em;
     }
     h2#biography {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
     #about-me {
         font-size: 1.8em;

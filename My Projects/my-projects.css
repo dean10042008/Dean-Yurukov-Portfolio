@@ -9,7 +9,7 @@
 
 body {
     background: #A9DBD7;
-    margin: 0.1em;
+    margin: 0.125em;
     height: 100%;
 }
 
@@ -25,7 +25,7 @@ main {
 
 ul {
     display: flex;
-    padding: 4px;
+    padding: 0.25em;
     padding-top: 0;
     padding-right: 0;
     justify-content: center;

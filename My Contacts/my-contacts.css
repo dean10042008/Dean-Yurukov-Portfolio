@@ -9,7 +9,7 @@
 
 body {
     background: #A9DBD7;
-    margin: 2px;
+    margin: 0.125em;
 }
 
 nav {
@@ -19,7 +19,7 @@ nav {
 
 ul {
     display: flex;
-    padding: 4px;
+    padding: 0.25em;
     padding-top: 0;
     padding-right: 0;
     justify-content: center;
