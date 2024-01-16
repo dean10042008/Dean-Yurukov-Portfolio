@@ -51,12 +51,8 @@ a {
 
 img {
     display: block;
-    width: 500px;
+    width: 30em;
     height: auto;
-}
-
-img:nth-child(2) {
-    width: 33em;
 }
 
 h1 {
@@ -68,6 +64,7 @@ h1 {
     padding: 0.6em;
     border-radius: 0.9em;
     margin: 0.2em;
+    text-align: center;
 }
 
 .other-buttons {
@@ -88,13 +85,13 @@ h1 {
 
 #display-none {
     visibility: hidden;
+    padding: 0;
+    margin: 0;
 }
 
 #weather-section {
-    width: 50%;
-    margin: 3em;
-    margin-left: -4.5em;
-    margin-top: -1em;
+    width: 45%;
+    margin-top: 5em;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -107,21 +104,73 @@ h1 {
 }
 
 #light-dark-section {
-    width: 50%;
-    height: 70vh;
+    width: 45%;
+    height: 80vh;
+    margin-top: 8em;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-end;
-    margin: 3em;
+    align-items: center;
+    float: right;
 }
 
 #light-dark-image {
     border-radius: 2.5em;
 }
 
-h1:nth-child(1) {
-    margin-right: 4em;
+#light-dark-2 {
+    display: none;
+}
+
+@media screen and (width < 1150px) {
+    img {
+        width: 27em;
+    }
+    #light-dark-image {
+        width: 27em;
+    }
+}
+
+@media screen and (width < 1000px) {
+    img, 
+    #light-dark-image {
+        width: 25em;
+    }
+}
+
+@media screen and (width < 900px) {
+    main {
+        height: 100vh;
+        margin-top: 6em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    #weather-section {
+        float: none;
+        margin: 0;
+        width: 100vw;
+        justify-self: center;
+    }
+    #light-dark {
+        display: none;
+    }
+    #light-dark-2 {
+        display: block;
+        align-self: center;
+    }
+    #light-dark-section {
+        margin: 0;
+        height: 50vh;
+    }
+    h1:nth-child(1) {
+        margin-right: 0;
+    }
+    img, 
+    #light-dark-image {
+        width: 30em;
+    }
 }
 
 @media screen and (width < 650px) {
@@ -141,20 +190,43 @@ h1:nth-child(1) {
         width: 100vw;
         justify-content: space-evenly;
     }
+    img, 
+    #light-dark-image {
+        width: 25em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
 }
 
 @media screen and (width < 410px) {
     a {
-        font-size: 0.95em;
-        padding: 0.5em 1.15em;
+        font-size: 1.09em;
+        padding: 0.5em 0.8em;
+    }
+    img, 
+    #light-dark-image {
+        width: 20em;
+    }
+    h1 {
+        font-size: 1.2em;
     }
 }
 
 @media screen and (width < 345px) {
     a {
-        font-size: 0.75em;
+        font-size: 1em;
+        padding: 0.4em 0.5em;
     }
     li { 
         margin-top: 0;
+    }
+    #weather-img, 
+    #light-dark-image {
+        width: 17em;
+        border-radius: 1.5em;
+    }
+    h1 {
+        font-size: 1em;
     }
 }

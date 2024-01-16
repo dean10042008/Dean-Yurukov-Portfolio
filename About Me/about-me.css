@@ -348,8 +348,8 @@ h2#biography {
 
 @media screen and (width < 410px) {
     a {
-        font-size: 0.95em;
-        padding: 0.5em 1.15em;
+        font-size: 1.09em;
+        padding: 0.5em 0.8em;
     }
     #gallery {
         flex-wrap: wrap;
@@ -359,7 +359,8 @@ h2#biography {
 
 @media screen and (width < 345px) {
     a {
-        font-size: 0.75em;
+        font-size: 1em;
+        padding: 0.4em 0.5em;
     }
     li { 
         margin-top: 0;
