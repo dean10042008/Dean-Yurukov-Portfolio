@@ -99,6 +99,7 @@ main {
     }
     #site-head {
         line-height: 2.5em;
+        font-size: 3em;
     }
 }
 
@@ -108,7 +109,7 @@ main {
         padding: 0.5em 0.8em;
     }
     #site-head {
-        font-size: 3.5em;
+        font-size: 2.5em;
     }
 }
 
@@ -121,6 +122,6 @@ main {
         margin-top: 0;
     }
     #site-head {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
