@@ -9,7 +9,6 @@
 
 body {
     background: #A9DBD7;
-    margin: 0.125em;
 }
 
 nav {
@@ -32,7 +31,7 @@ li {
     margin-left: 0;
 }
 
-a {
+li a {
     text-decoration: none;
     color: #DFFFFC;
     text-transform: uppercase;
@@ -41,6 +40,19 @@ a {
     padding: 1em;
     padding-top: 0.4em;
     padding-bottom: 0.5em;
+}
+
+#icons a {
+    text-decoration: none;
+}
+
+#icons i {
+    transition: all 100ms linear 50ms;
+}
+
+#icons i:hover {
+    background-color: #203937;
+    color: #A9DBD7;
 }
 
 h3 {
@@ -72,19 +84,19 @@ h3 {
     visibility: hidden;
 }
 
-main {
+#ph-m {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 50vh;
 }
 
-main section {
+#ph-m section {
     display: flex;
     flex-direction: column;
 }
 
-main section i {
+#ph-m section i {
     background-color: #385754;
     color: #DFFFFC;
     padding: 0.45em;
@@ -126,6 +138,67 @@ main section i {
     bottom: 0;
 }
 
+.responsive {
+    display: none;
+}
+
+@media screen and (width < 800px) {
+    main {
+        height: 180vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div {
+        display: flex;
+    }
+    .responsive {
+        display: block;
+    }
+    hr {
+        display: none;
+    }
+    #ph-m, #icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #ph-m {
+        height: 60vh;
+    }
+    #icons {
+        height: 90vh;
+    }
+    #icons div {
+        display: flex;
+        flex-direction: column;
+    }
+    #icons i {
+        background-color: #385754;
+        color: #DFFFFC;
+        padding: 0.45em;
+        border-radius: 100%;
+        font-size: 3em;
+        position: relative;
+        top: 0.35em;
+    }
+    #icons a {
+        align-self: center;
+    }
+    h3 {
+        width: 10em;
+    }
+    #phone,
+    #email,
+    #twitter,
+    #github,
+    #facebook {
+        text-align: center;
+    }
+}
+
 @media screen and (width < 650px) {
     #display-none {
         display: none;
@@ -134,10 +207,9 @@ main section i {
         display: flex;
         justify-content: center;
     }
-    a {
+    li a {
         font-size: 1.2em;
         padding: 0.5em 1em;
-        flex-wrap: wrap;
     }
     ul {
         width: 100vw;
@@ -146,18 +218,44 @@ main section i {
 }
 
 @media screen and (width < 410px) {
-    a {
+    li a {
         font-size: 1.09em;
         padding: 0.5em 0.8em;
+    }
+    main {
+        margin-top: 2em;
+        height: 130vh;
+    }
+    #ph-m {
+        height: 50vh;
+    }
+    #icons {
+        height: 75vh;
+    }
+    #ph-m section i,
+    #icons i,
+    h3 {
+        font-size: 2em;
+    }
+    #icons i {
+        transition: none;
     }
 }
 
 @media screen and (width < 345px) {
-    a {
+    li a {
         font-size: 1em;
         padding: 0.4em 0.5em;
     }
     li { 
         margin-top: 0;
+    }
+    #ph-m section i,
+    #icons i,
+    h3 {
+        font-size: 1.5em;
+    }
+    #icons i {
+        transition: none;
     }
 }
