@@ -46,6 +46,11 @@ li a {
     padding: 1em;
     padding-top: 0.4em;
     padding-bottom: 0.5em;
+    transition: all 70ms linear 10ms;
+}
+
+a:hover {
+    background-color: #369a31;
 }
 
 img {

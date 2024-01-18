@@ -40,6 +40,11 @@ li a {
     padding: 1em;
     padding-top: 0.4em;
     padding-bottom: 0.5em;
+    transition: all 70ms linear 10ms;
+}
+
+a:hover {
+    background-color: #369a31;
 }
 
 #icons a {
@@ -206,6 +211,7 @@ h3 {
     nav {
         display: flex;
         justify-content: center;
+        position: sticky;
     }
     li a {
         font-size: 1.2em;
@@ -237,9 +243,6 @@ h3 {
     h3 {
         font-size: 2em;
     }
-    #icons i {
-        transition: none;
-    }
 }
 
 @media screen and (width < 345px) {
@@ -254,8 +257,5 @@ h3 {
     #icons i,
     h3 {
         font-size: 1.5em;
-    }
-    #icons i {
-        transition: none;
     }
 }
